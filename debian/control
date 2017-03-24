@@ -1,0 +1,20 @@
+Source: python-mmh3
+Maintainer: Andrew Otto (WMF) <otto@wikimedia.org>
+Section: python
+Priority: optional
+Build-Depends: debhelper (>= 8), dh-python,
+ python-all (>= 2.6.6-3), python-dev (>= 2.6.6-3), python-setuptools (>= 0.6b3),
+ python3-all (>= 3.4.0), python3-dev (>= 3.4.0), python3-setuptools (>= 0.6b3)
+Standards-Version: 3.9.3
+
+Package: python-mmh3
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+Provides: ${python:Provides}
+Description: Python wrapper for MurmurHash (MurmurHash3), a set of fast and robust hash functions.
+
+Package: python3-mmh3
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Provides: ${python3:Provides}
+Description: Python wrapper for MurmurHash (MurmurHash3), a set of fast and robust hash functions.

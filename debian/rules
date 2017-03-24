@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+
+export PYBUILD_NAME=mmh3
+
+%:
+	dh $@ --with python2,python3 --buildsystem=pybuild
+
+override_dh_auto_clean:
+	python setup.py clean -a
+	find . -name \*.pyc -exec rm {} \;
